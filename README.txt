@@ -44,11 +44,11 @@ En la carpeta src\dam2\dii\p11\model hay dos clases que mantienen el modelo de d
 - Usuario.java que es un bean con los datos del Usuario. En este caso nombre, contraseña e intentos restantes;
 - UserDb.java actúa como base de datos. Proporciona métodos CRUD. Es una clase Singleton que usan los dos Servlets para
 acceder a los datos de los usuarios. Al crearse la instancia se inicializa la "base de datos" con usuarios de ejemplo:
-    Nombre		Contraseña	Intentos restantes
+    	Nombre		Contraseña	Intentos restantes
 	"admin"		"admin"		3
-    "betty"		"bbbb"		0
-    "charlie"	"cccc"		1
-    "diane"		"dddd"		3
-    "eddie"		"eeee"		0
-    "felicia"	"ffff"		0
+    	"betty"		"bbbb"		0
+    	"charlie"	"cccc"		1
+    	"diane"		"dddd"		3
+    	"eddie"		"eeee"		0
+    	"felicia"	"ffff"		0
 
