@@ -30,6 +30,9 @@ public class Admins extends HttpServlet {
       DB_USERS.updateUser(user);
       request.setAttribute("users", DB_USERS.getAllUsers());
       request.getRequestDispatcher("admin.jsp").forward(request, response);
+    } else {
+      request.setAttribute("users", null);
+      request.getRequestDispatcher("admin.jsp").forward(request, response);
     }
   }
 }

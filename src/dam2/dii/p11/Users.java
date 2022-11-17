@@ -51,6 +51,8 @@ public class Users extends HttpServlet {
             request.getRequestDispatcher("index.jsp").forward(request, response);
           } else {
             // Autentication OK
+            foundUser.setTrysLeft(3);
+            DB_USERS.updateUser(foundUser);
             if (foundUser.getName().equals("admin")) {
               // Admin user
               request.setAttribute("users", DB_USERS.getAllUsers());
